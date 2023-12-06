@@ -1,8 +1,8 @@
 @charset "UTF-8";
 
 /* Paleta de cores
-Cinza : #717488
-Cinza claro : #AAB7C2 
+Verde : #49a09d
+Lilas : #5f2c82
 */
 
 * {
@@ -13,7 +13,7 @@ Cinza claro : #AAB7C2
 }
 
 body, html {
-    background-color: #717488;
+    background-color: #5f2c82;
     height: 100vh;
     width: 100vw;
 }
@@ -34,15 +34,17 @@ section#login {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.514);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.63);
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 
-section#login, div#imagem {
-    background: #717488 url(../imagens/pexels-hana-brannigan-3652902.jpg) no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 500px;
-    display: block;
+section#login > div#imagem {
+   background: #5f2c82 url(../imagens/pexels-adrien-olichon-2387796.jpg) no-repeat;
+   height: 200px;
+   background-size: cover;
+   background-position: center bottom;
+   display: block;
 }
 
 section#login > div#formulario {
